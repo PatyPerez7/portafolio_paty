@@ -16,16 +16,17 @@ body {
 
 .container {
   max-width: 800px;
+  min-width: 355px;
   width: 100%;
   margin: 0 auto;
   margin-top: 50px;
 }
 
 .section {
-  background-color: #ffff;
+  background-color: #fff;
   border-radius: 7px;
   display: flex;
-  padding: 50px;
+  padding: 20px 10px; /* 20px arriba/abajo y 10px izquierda/derecha */
   margin-bottom: 1px;
 }
 .section2{
@@ -100,6 +101,13 @@ h4{
   color: #777;
 }
 
+.card video, .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* opcional */
+  object-fit: cover;  /* opcional, si quieres que se recorte bien */
+}
+
 .info-job {
   font-weight: 500;
   text-decoration: none;
@@ -139,6 +147,14 @@ h4{
   font-size: x-large;
   border-bottom: 1px solid rgb(185, 185, 185);
   padding-bottom: 40px;
+}
+
+.logos-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Opcional, para que bajen si no caben */
+  gap: 16px; /* Opcional, separa los íconos */
 }
 
 .btn-black {
@@ -230,6 +246,38 @@ form {
   border: 2px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+.social-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #0077b5; /* Azul LinkedIn por default */
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons a.github {
+  background-color: #6E5494; /* Color GitHub */
+}
+
+.social-buttons a:hover {
+  opacity: 0.8;
+}
+
+.social-buttons img {
+  width: 24px;
+  height: 24px;
 }
 
 input[type="submit"] {
