@@ -95,7 +95,7 @@
             <div class="subsection">
                 <h2>Experiencia</h2>
                 <div class="contenido">
-                    <p>Practicas de Desarrollo Web - Uso de HTML, Figma, CSS, SASS, jQuery, JavaScript, Bootstrap,
+                    <p>Practicas de Desarrollo Web - Uso de HTML, Figma, CSS, SASS, JavaScript, Bootstrap,
                         React,
                         Responsive
                         Design, Git, Github, AWS. </p>
@@ -103,7 +103,8 @@
                     <span class="dates">2024 - Presente</span>
                 </div>
                 <div class="contenido">
-                    <p>Digitalizadora - Digitalización y gestión de documentos técnicos para proyectos de infraestructura de fibra óptica (Megacable).</p>
+                    <p>Digitalizadora - Digitalización y gestión de documentos técnicos para proyectos de
+                        infraestructura de fibra óptica (Megacable).</p>
                     <h4>GRUPO TELEASESORES DE OCCIDENTE SA. de CV.</h4>
                     <span class="dates">2021 - Presente</span>
                 </div>
@@ -153,26 +154,26 @@
         <!-- aqui va la de contacto -->
         <div class="section">
             <form id="form">
-
-                <div class="fila-1">
-                    <input type="text" name="from_name" id="from_name" placeholder="Nombre">
-                    <input type="text" name="email_id" id="email_id" placeholder="E-mail">
+                <div class="field">
+                  <label for="name">Nombre: </label>
+                  <input type="text" name="name" id="name">
                 </div>
-                <div class="fila-2">
-                    <input type="text" name="message" id="message" placeholder="Mensaje">
+                <div class="field">
+                  <label for="message">Mensaje: </label>
+                  <input type="text" name="message" id="message">
                 </div>
-                <input type="submit" id="button" value="Send Email">
-            </form>
+                <div class="field">
+                  <label for="email_id">Correo: </label>
+                  <input type="text" name="email_id" id="email_id">
+                </div>
+                <input type="submit" id="button" value="Enviar correo" >
+              </form>
+              <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="emailjs.js">
+        emailjs.init('ixGZ1ahg9ReDCRNga')
+    </script>
         </div>
     </div>
-
-    <!-- ENLACE A JS -->
-    <script src="./emailpg.js"></script>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> -->
-
-    <script type="text/javascript">
-        emailjs.init('ESxBmBZcS5TFp5JZl')
-    </script>
 
 </body>
 

@@ -203,7 +203,7 @@ form {
   padding-bottom: 30px;
   margin-bottom: 60px;
 }
-.fila-1 {
+.field{
   width: 100%;
 }
 .name,
@@ -211,7 +211,7 @@ form {
 .message {
   margin-bottom: 10px;
 }
-#from_name,
+#name,
 #email_id {
   width: 100%;
   height: 50px;
